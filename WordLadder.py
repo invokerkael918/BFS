@@ -1,3 +1,4 @@
+from _collections import deque
 class Solution:
     """
     @param: start: a string
@@ -9,7 +10,7 @@ class Solution:
     def ladderLength(self, start, end, dict):
         # write your code here
         dict.add(end)
-        queue = collections.deque([start])
+        queue = deque([start])
         visited = set([start])
 
         distance = 0
